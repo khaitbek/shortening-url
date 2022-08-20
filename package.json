@@ -2,11 +2,9 @@
   "name": "shortening-url",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
-  "type": "module",
   "scripts": {
-    "build": "parcel build src/index.html",
-    "dev": "parcel src/index.html"
+    "build": " npx -p parcel parcel build build src/index.html",
+    "dev": " npx -p parcel parcel src/index.html"
   },
   "repository": {
     "type": "git",
