@@ -1,0 +1,26 @@
+{
+  "name": "shortening-url",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel build src/index.html",
+    "dev": "parcel src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khaitbek/shortening-url.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khaitbek/shortening-url/issues"
+  },
+  "homepage": "https://github.com/khaitbek/shortening-url#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "parcel": "^2.7.0",
+    "sass": "^1.54.5"
+  }
+}
