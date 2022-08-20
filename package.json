@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/khaitbek/shortening-url#readme",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
     "autoprefixer": "^10.4.8",
     "parcel": "^2.7.0",
     "sass": "^1.54.5"
