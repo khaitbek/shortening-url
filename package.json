@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": " npx -p parcel parcel build build src/index.html",
+    "build": " npx -p parcel parcel build src/index.html",
+    "start": " npx -p parcel parcel build src/index.html",
     "dev": " npx -p parcel parcel src/index.html"
   },
   "repository": {
