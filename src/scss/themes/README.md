@@ -1,0 +1,1 @@
+when you have multiple themes in your site, you can use /themes folder to make separate files for each theme

@@ -1,0 +1,25 @@
+@use "../abstracts/media-query" as *;
+
+.article{
+    padding: 90px 0;
+    background-image: url("./images/article-bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.article__wrapper{
+    display: grid;
+    place-items: center;
+    max-width: 300px;
+    margin-inline: auto;
+    text-align: center;
+}
+
+@include mq(laptop){
+    .article{
+        padding: 57px 0;
+    }
+    .article__title{
+        margin-top: 0;
+    }
+}

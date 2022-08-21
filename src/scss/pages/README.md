@@ -1,0 +1,1 @@
+In this /pages folder you can find individual stylings for each pages of the site

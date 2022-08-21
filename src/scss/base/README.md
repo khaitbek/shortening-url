@@ -1,0 +1,1 @@
+In this /base folder you can find some general styles related to the page like fonts or default stylings

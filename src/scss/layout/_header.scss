@@ -1,0 +1,151 @@
+@use "../abstracts/media-query" as *;
+
+.header{
+    padding-block:40px;
+    color: var(--clr-light-300);
+}
+
+.site-logo{
+    margin-right: 45px;
+}
+
+.header__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hamburger{
+    display: grid;
+    grid-row-gap:5px;
+    position: relative;
+}
+
+.line{
+    width: 24px;
+    height: 3px;
+    background-color: var(--clr-light-100);
+}
+
+.header__outer{
+    position: fixed;
+    z-index: 2;
+    padding: 40px;
+    top: 100px;
+    left: 50%;
+    width: 90%;
+    transform: translateX(-50%);
+    display: none;
+    grid-row-gap: 30px;
+    margin-inline: auto;
+    background-color: var(--clr-primary-200);
+}
+
+.header__outer.show{
+    display: grid;
+}
+
+.navigation{
+    position: relative;
+}
+
+.navigation::after{
+    content: "";
+    display: block;
+    width: 90%;
+    height: 1px;
+    margin-inline: auto;
+    background-color: var(--clr-light-100);
+}
+
+.navigation__list{
+    display: grid;
+    place-items: center;
+    margin: 0;
+}
+
+.navigation__item{
+    margin-bottom: 30px;
+}
+
+.navigation__link{
+    line-height: 27px;
+}
+
+.header__outer__wrapper{
+    display: grid;
+    grid-gap: 30px;
+    place-items: center;
+    width: 80%;
+    margin-inline: auto;
+}
+
+.header__login{
+    line-height: 27px;
+}
+
+
+@include mq(medium){
+    .site-logo__img{
+        width: 120px;
+        height: 32px;
+    }
+    .header__inner{
+        display: flex;
+        align-items: center;
+    }
+    .header__outer{
+        position: static;
+        display: flex;
+        top: 0;
+        transform: none;
+        flex-grow: 1;
+        justify-content: space-between;
+    }
+    .hamburger{
+        display: none;
+    }
+    .navigation::after{
+        display: none;
+    }
+    .header__outer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: transparent;
+    }
+    .header__outer__wrapper{
+        display: flex;
+        align-items: center;
+        width:unset;
+        margin: 0;
+    }
+
+    .navigation__list{
+        display: flex;
+        align-items: center;
+    }
+
+    .navigation__item{
+        margin-bottom: 0;
+        color: var(--clr-light-100);
+    }
+
+    .navigation__item:not(:first-child){
+        margin-left: 30px;
+    }
+
+    .navigation__link{
+        font-size: var(--fz-100);
+        line-height: 22px;
+    }
+
+    .header__login{
+        color: var(--clr-light-100);
+        font-size: var(--fz-100);
+    }
+
+    .header__btn{
+        font-size: var(--fz-100);
+    }
+}

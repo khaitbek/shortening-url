@@ -1,0 +1,23 @@
+.input{
+    padding: 10px 16px;
+    border-radius: 5px;
+    background-color: var(--clr-light-300);
+    border: 3px solid var(--clr-primary-100);
+
+    &:not(:placeholder-shown):invalid{
+        border-color: var(--clr-danger-100);
+        color: var(--clr-danger-100);
+    }
+
+    
+    &::placeholder{
+        font-size: var(--fz-200);
+        line-height: 36px;
+        color: var(--clr-primary-100);
+        opacity: 0.5;
+    }
+}
+
+.input:not(:placeholder-shown):invalid + .input-error{
+    display: block;
+}

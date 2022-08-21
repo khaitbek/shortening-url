@@ -1,0 +1,27 @@
+@use "../base/colors" as *;
+@use "../base/fonts" as *;
+@use "./media-query" as *;
+
+:root{
+    @each $color, $type in $colors{
+        @each $prop, $value in $type{
+            --clr-#{$color}-#{$prop}:#{$value};
+        }
+    }
+    @each $level, $weight in $font-weights{
+        --fw-#{$level}:#{$weight};
+    }
+    @each $screen-size, $level in $type-scale{
+        @if $screen-size == small{
+            @each $value, $size in $level{
+                --fz-#{$value}:#{$size};
+            }
+        }@else{
+            @include mq(large){
+                @each $value, $size in $level{
+                    --fz-#{$value}:#{$size};
+                }
+            }
+        }
+    }
+}

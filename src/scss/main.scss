@@ -1,14 +1,10 @@
-body{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    background: #000;
-}
-
-h1{
-    color: white;
-    font-size: 5rem;
-    font-family: sans-serif;
-}
+@use "./abstracts/variables";
+@use "./base/default";
+@use "./abstracts/utility_classes";
+@use "./components/buttons";
+@use "./layout/header";
+@use "./layout/hero";
+@use "./layout/cta";
+@use "./layout/stats";
+@use "./layout/articles";
+@use "./layout/footer";

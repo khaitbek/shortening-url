@@ -1,0 +1,1 @@
+In this /layout folder you can find stylesheets for individual section of the site like one for header, one for footer and etc.

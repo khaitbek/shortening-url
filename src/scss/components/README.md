@@ -1,0 +1,1 @@
+In this /components folder you can find widgets related to the site like buttons or modals, slides, carousels and stuff like that

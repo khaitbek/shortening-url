@@ -1,0 +1,32 @@
+@use "../abstracts/variables" as *;
+
+$btn-radius:28px;
+
+button{
+    cursor: pointer;
+}
+
+.btn{
+    border: none;
+    background-color: transparent;
+    border-radius: $btn-radius;
+}
+
+.btn-primary{
+    padding: 12px 40px;
+    color: var(--clr-light-300);
+    background-color: var(--clr-blurish-100);
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        background-color: var(--clr-blurish-200);
+    }
+}
+
+.header__btn{
+    padding: 10px 24px;
+}
+
+.cta__btn{
+    padding: 18px 40px;
+}
+
