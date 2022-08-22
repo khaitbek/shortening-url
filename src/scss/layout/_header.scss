@@ -70,6 +70,11 @@
 
 .navigation__link{
     line-height: 27px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navigation__link:hover{
+    color: var(--clr-primary-200);
 }
 
 .header__outer__wrapper{

@@ -1,6 +1,7 @@
 @use "../abstracts/media-query" as *;
 
 .hero{
+  padding-bottom: 80px;
   margin-bottom: 88px;
 }
 
@@ -31,6 +32,12 @@
 .hero__title {
     margin: 0;
   letter-spacing: -2px;
+}
+
+@include mq(medium) {
+  .hero{
+    padding-bottom: 100px;
+  }
 }
 
 @include mq(laptop) {
