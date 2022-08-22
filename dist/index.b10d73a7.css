@@ -608,7 +608,7 @@ button {
 }
 
 .article__wrapper {
-  max-width: 300px;
+  max-width: 540px;
   text-align: center;
   place-items: center;
   margin-inline: auto;
