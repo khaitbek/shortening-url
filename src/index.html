@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./scss/main.scss">
     <!-- script -->
     <script src="./script/nav.js" defer></script>
+    <script src="./script/app.js" defer></script>
 </head>
 
 <body>
@@ -86,12 +87,14 @@
             <h2 class="visually-hidden cta__title">Shorten your links quickly</h2>
             <div class="container">
                 <div class="cta__wrapper">
-                    <form class="cta__form" action="https://echo.htmlacademy.ru/courses">
-                        <input class="input cta__input" name="user_link" aria-label="Enter your link here" type="text"
+                    <form class="cta__form" id="userForm">
+                        <input class="input cta__input" id="userInput" name="user_link" aria-label="Enter your link here" type="text"
                             placeholder="Shorten a link here..." minlength="8"
                             pattern="(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,})"
                             required>
-                        <span class="cta__error input-error">Please enter a valid link</span>
+                        <span class="cta__error input-error" id="userErrorSpan">Please enter a valid link</span>
+                        <!-- the actual link -->
+                        <p class="cta__shortened-link" id="userShortenedLink">Your shortened link</p>
                         <!-- submit btn -->
                         <button class="cta__btn submit-btn | btn btn-primary fw-200 fz-300" type="submit">
                             Shorten It!

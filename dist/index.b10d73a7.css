@@ -488,6 +488,12 @@ button {
   position: relative;
 }
 
+.cta__shortened-link {
+  color: #fff;
+  text-align: center;
+  display: none;
+}
+
 .cta__btn {
   border-radius: 10px;
 }
